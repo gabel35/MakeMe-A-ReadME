@@ -73,65 +73,66 @@ inquirer
     .then((data) => {
         const {title, description, installation, usage, link, image, credits, contributing, tests, license, username, email, questions} = data;
         const generateReadme = `
-        # ${title}
+# ${title}
 
-        ## Description
+## Description
 
-        ${description}
+${description}
 
-        ## Table of Contents
+## Table of Contents
 
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [Credits](#credits)
-        * [Contributing](#contributing)
-        * [Tests](#tests)
-        * [License](#license)
-        * [Questions](#questions)
-
-
-        ## Installation
-
-        ${installation}
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
 
-        ## Usage
+## Installation
 
-        ${usage}
-
-        Please follow the following link to the application!
-        !(${link})
-
-        ![weather-app](${image})
+${installation}
 
 
-        ## Credits
+## Usage
 
-        ${credits}
+${usage}
 
-        ### Contributing
+Please follow the following link to the application!
+!(${link})
 
-        ${contributing}
+![weather-app](${image})
+
+
+## Credits
+
+${credits}
+
+### Contributing
+
+${contributing}
         
-        ### Tests
+### Tests
 
-        ${tests}
+${tests}
         
-        ### License
+### License
 
-        ${license}
+${license}
 
-        ### Questions
+### Questions
 
-        For any addiotional questions:
-        ${questions}
-        github: !(https://github.com/${username})
-        email: ${email}
+For any addiotional questions:
+${questions}
+
+github: !(https://github.com/${username})
+email: ${email}
         
 
-        -------------
+-------------
 
-        Thank you!
+Thank you!
 
         `;
         fs.writeFile("README.md", generateReadme, (err) =>
