@@ -123,29 +123,23 @@ inquirer
 
         ### Questions
 
-        !(https://github.com/${username})
+        For any addiotional questions:
         ${questions}
+        github: !(https://github.com/${username})
+        email: ${email}
+        
 
         -------------
 
         Thank you!
 
-        `
-    })
+        `;
+        fs.writeFile("README.md", generateReadme, (err) =>
+        err ? console.log(err) : console.log("success!")
+        );
+    });
 
+// TODO //    
 // License - choose a license for my application from a list of options
 // THEN a badge for that license is added near the top of the README and a notice is added to the License section that explains which license the application is covered under
-// Questions - GitHub username with a link to my GitHub profile, email address with instructions on how to reach me with additional questions
 
-// TODO: Create a function to write README file
-
-function writeToFile(fileName, data) {
-    const fileName = "README.md";
-
-}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
