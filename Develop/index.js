@@ -11,7 +11,7 @@ const inquirer = require('inquirer')
 // Contributing - contribution guidelines, 
 // Tests - test instructions
 // License - choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled  that explains which license the application is covered under
+// THEN a badge for that license is added near the top of the README and a notice is added to the License section that explains which license the application is covered under
 // Questions - GitHub username with a link to my GitHub profile, email address with instructions on how to reach me with additional questions
 const questions = [
     {
@@ -26,13 +26,44 @@ const questions = [
     },
     {
         type: "input",
-        message: "How do you install your project",
+        message: "How do you install your project?",
         name: "installation"
     },
     {
         type: "input",
-        message: "Please describe your project: ",
-        name: "desciption"
+        message: "How do you use your project?",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message: "How can others contribute to this project?",
+        name: "contributing"
+    },
+    {
+        type: "input",
+        message: "How do you test your project?",
+        name: "tests"
+    },
+    {
+        type: "list",
+        message: "Choose a license for your project:",
+        name: "license",
+        choices: ["", "", "", ""]
+    },
+    {
+        type: "input",
+        message: "What is your github username?",
+        name: "username"
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "How should others contact you for questions?",
+        name: "questions"
     },
 ];
 
