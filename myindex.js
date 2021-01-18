@@ -25,6 +25,16 @@ inquirer
     },
     {
         type: "input",
+        message: "Please provide the link to your project (an http/https url):",
+        name: "link"
+    },
+    {
+        type: "input",
+        message: "Please provide a pathway to an image or screenshot of your project (ex. ./Assets/image.PNG):",
+        name: "image"
+    },
+    {
+        type: "input",
         message: "Is there anyone you would like to give credit to, and why?",
         name: "credits"
     },
@@ -46,6 +56,11 @@ inquirer
     },
     {
         type: "input",
+        message: "How should others contact you for questions?",
+        name: "questions"
+    },
+    {
+        type: "input",
         message: "What is your github username?",
         name: "username"
     },
@@ -53,21 +68,6 @@ inquirer
         type: "input",
         message: "What is your email address?",
         name: "email"
-    },
-    {
-        type: "input",
-        message: "How should others contact you for questions?",
-        name: "questions"
-    },
-    {
-        type: "input",
-        message: "Please provide the link to your project (an http/https url):",
-        name: "link"
-    },
-    {
-        type: "input",
-        message: "Please provide a pathway to an image or screenshot of your project (ex. ./Assets/image.PNG):",
-        name: "image"
     }
     ])
     .then((data) => {
@@ -102,7 +102,7 @@ ${usage}
 Please follow the following link to the application!
 !(${link})
 
-![weather-app](${image})
+![${title}](${image})
 
 
 ## Credits
@@ -117,7 +117,7 @@ ${contributing}
 
 ${tests}
         
-### License
+### Licenses
 
 ${license}
 

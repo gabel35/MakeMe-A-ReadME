@@ -12,7 +12,7 @@ This application is made to generate a professional README based off the informa
 * [Credits](#credits)
 * [Contributing](#contributing)
 * [Tests](#tests)
-* [License](#license)
+* [Licenses](#license)
 * [Questions](#questions)
 
 
@@ -43,7 +43,7 @@ One can fork the repository and create branches to contribute to the project. A 
 
  According to a recent class, you can use something called spyon - more information to come.
         
-### License
+### Licenses
 
 
 
