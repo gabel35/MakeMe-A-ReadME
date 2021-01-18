@@ -124,10 +124,10 @@ ${license}
 ### Questions
 
 For any addiotional questions:
-${questions}
+\n${questions}
 
 github: !(https://github.com/${username})
-email: ${email}
+\nemail: ${email}
         
 
 -------------
