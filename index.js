@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer')
+const licenses = require('./licenses.js')
 
 inquirer
     .prompt([
@@ -52,7 +53,7 @@ inquirer
         type: "list",
         message: "Choose a license for your project:",
         name: "license",
-        choices: ["", "", "", ""]
+        choices: ["MIT", "GNU GPLv3", "ISC", "Apache 2.0"]
     },
     {
         type: "input",
@@ -72,8 +73,26 @@ inquirer
     ])
     .then((data) => {
         const {title, description, installation, usage, link, image, credits, contributing, tests, license, username, email, questions} = data;
+        let badge = "";
+        let notice = "";
+        licenses 
+            if (license === "MIT"){
+                badge = licenses.mitBadge;
+                notice = licenses.mitText;
+            } else if (license === "GNU GPLv3"){
+                badge = licenses.gnuBadge;
+                notice = licenses.gnuText;    
+            } else if (license === "ISC"){
+                badge = licenses.iscBadge;
+                notice = licenses.iscText;
+            } else {
+                badge = licenses.apacheBadge;
+                notice = licenses.apacheText;
+            }
         const generateReadme = `
 # ${title}
+
+${badge}
 
 ## Description
 
@@ -119,7 +138,7 @@ ${tests}
         
 ### Licenses
 
-${license}
+${notice}
 
 ### Questions
 
@@ -135,12 +154,12 @@ github: !(https://github.com/${username})
 Thank you!
 
         `;
+        console.log(license)
         fs.writeFile("README.md", generateReadme, (err) =>
         err ? console.log(err) : console.log("success!")
         );
     });
 
 // TODO //    
-// License - choose a license for my application from a list of options
 // THEN a badge for that license is added near the top of the README and a notice is added to the License section that explains which license the application is covered under
 

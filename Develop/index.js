@@ -83,7 +83,7 @@ init();
 
 // Questions for Andrew: //
 // is my index ok, or do I need to transcribe in the format they gave? how to do so? //
-// is this what is meant by the lecnse portion? //
+// originally had ${username} after the copyright year in licenses.js but it didn't work, is that possible to do? //
 // does the package-lock.json need to be gitignored or nah? //
 
 
