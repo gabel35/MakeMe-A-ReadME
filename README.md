@@ -25,12 +25,12 @@ To install the packages required, one must type in "npm install" or "npm i" in t
 
 ## Usage
 
-Launch th eapplication by typing "node index.js" in the command line. Once you launch the application, a series of questions will follow in the terminal. Once you answer them all, a file will be generated and provide you a well-laid out ReadMe with that information.
+Launch the application by typing "node index.js" in the command line. Once you launch the application, a series of questions will follow in the terminal. Once you answer them all, a file will be generated and provide you a well-laid out ReadMe with that information.
 
 Please follow the following link to the application!
 !(https://github.com/gabel35/MakeMe-A-ReadME)
 
-![MakeMe-A-ReadMe](.Assets/placeholder.PNG)
+![MakeMe-A-ReadMe](./Assets/placeholder.PNG)
 
 
 ## Credits
@@ -43,7 +43,7 @@ One can fork the repository and create branches to contribute to the project. A 
         
 ### Tests
 
-According to a recent class, you can use something called spyon - more information to come.
+
         
 ### Licenses
 
@@ -75,7 +75,10 @@ Email me if you have any questions!
 github: !(https://github.com/gabel35)
 
 email: GabrielJose3135@gmail.com
-        
+
+### DEMO
+
+![MakeMe-A-ReadMe](./Assets/MakeMe-A-ReadMe_demo.mp4)        
 
 -------------
 
