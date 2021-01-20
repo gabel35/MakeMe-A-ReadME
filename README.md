@@ -28,8 +28,9 @@ To install the packages required, one must type in "npm install" or "npm i" in t
 Launch the application by typing "node index.js" in the command line. Once you launch the application, a series of questions will follow in the terminal. Once you answer them all, a file will be generated and provide you a well-laid out ReadMe with that information.
 
 Please follow the following link to the application!
-!(https://github.com/gabel35/MakeMe-A-ReadME)
+![MakeMe-A-ReadMe Repository](https://github.com/gabel35/MakeMe-A-ReadME)
 
+![DEMO Video](https://drive.google.com/file/d/1JIZL_9-E8x9X9kN1CrCE_ccyIQW9HoWT/view?usp=sharing)  
 ![MakeMe-A-ReadMe](./Assets/placeholder.PNG)
 
 
@@ -43,7 +44,7 @@ One can fork the repository and create branches to contribute to the project. A 
         
 ### Tests
 
-
+Currently no tests. Stay tuned.
         
 ### Licenses
 
@@ -72,14 +73,10 @@ For any addiotional questions:
 
 Email me if you have any questions!
 
-github: !(https://github.com/gabel35)
+github: [gabel35](https://github.com/gabel35)
 
 email: GabrielJose3135@gmail.com
-
-### DEMO
-
-![MakeMe-A-ReadMe](https://drive.google.com/file/d/1JIZL_9-E8x9X9kN1CrCE_ccyIQW9HoWT/view?usp=sharing)        
-
+    
 -------------
 
 Thank you!

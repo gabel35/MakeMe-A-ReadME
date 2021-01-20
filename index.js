@@ -119,7 +119,7 @@ ${installation}
 ${usage}
 
 Please follow the following link to the application!
-!(${link})
+![${title}](${link})
 
 ![${title}](${image})
 
